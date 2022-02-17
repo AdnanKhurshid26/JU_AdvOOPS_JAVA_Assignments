@@ -3,29 +3,40 @@ package com.company;
 import java.util.Scanner;
 
 public class BankAcct {
-    private int accn;
-    private int interest;
+    private int accno;
     private int balance;
+    private static int interestRate;
+  
 
-    public BankAcct(int a,int b){accn=a;interest=10;balance=b;}
-
-    public int getInterest() {
-        return interest;
+    public BankAcct(int accno, int balance) {
+        this.accno = accno;
+        this.balance = balance;
     }
 
-    public void setInterest(int interest) {
-        this.interest = interest;
+    public int getAccno() {
+        return accno;
+    }
+
+    public static int getInterestRate() {
+        return interestRate;
+    }
+
+   public static void setInterestRate(int interestRate) {
+        BankAcct.interestRate = interestRate;
     }
 
     public int getBalance() {
         return balance;
     }
-    double calculateInterest(){
+
+    public double calculateInterest() {
         System.out.println("Enter number of years\n");
-        Scanner sc=new Scanner(System.in);
-        int years=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int years = sc.nextInt();
+        sc.nextLine();
         sc.close();
-        return ((balance*years*interest)/100);
-        
+        return ((balance * years * interestRate) / 100);
+
     }
+
 }
