@@ -39,4 +39,15 @@ public class BankAcct {
 
     }
 
+    public static void main(String[] args) {
+        BankAcct b1 = new BankAcct(12345, 10000);
+        BankAcct b2 = new BankAcct(12346, 20000);
+        BankAcct.setInterestRate(10);
+        System.out.println("Interest Rate is " + BankAcct.getInterestRate());
+       
+        System.out.println("Interest for b1 is " + b1.calculateInterest());
+        System.out.println("Interest for b2 is " + b2.calculateInterest());
+        
+    }
+
 }
