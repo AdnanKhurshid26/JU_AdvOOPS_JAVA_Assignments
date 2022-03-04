@@ -50,7 +50,7 @@ public class Book {
 
     // Return copies available of a Book
     public int getCopiesAvailable() {
-        return copiesPurchased;
+        return copiesAvailable;
     }
 
     // Update copies available of a Book
