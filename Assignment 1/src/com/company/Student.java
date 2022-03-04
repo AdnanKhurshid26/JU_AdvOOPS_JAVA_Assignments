@@ -38,6 +38,10 @@ public class Student {
     }
 
     public Student() {
+        this.roll = 0;
+        this.name = "";
+        this.score = 0;
+
     };
 
     public Student(Student s) {

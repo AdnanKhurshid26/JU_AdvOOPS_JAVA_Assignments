@@ -48,7 +48,7 @@ class Customer {
     }
 
     public boolean loanAsked(int amount) {
-        if (amount > creditLimit) {
+        if (amount > eligibleLoan()) {
             return false;
         }
         curLoanAmount += amount;

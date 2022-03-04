@@ -12,7 +12,7 @@ public class q5 {
         s2 = sin.nextLine();
 
         if (s1==s2) {
-           
+            System.out.println("Both strings are equal");
         }
          if (s1.equals(s2)) {
             System.out.println("Both strings are equal");

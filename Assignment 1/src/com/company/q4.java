@@ -11,7 +11,7 @@ public class q4 {
         System.out.println("Enter the radius");
         radius = s.nextDouble();
 
-        area = 2*pi*radius;
+        area = pi*radius*radius;
 
         System.out.println("Area = " + area);
         s.close();
