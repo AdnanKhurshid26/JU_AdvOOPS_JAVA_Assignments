@@ -1,6 +1,6 @@
 package BookList;
 
-import java.util.*;
+import java.util.Scanner;
 public class Book {
     Scanner scan = new Scanner(System.in);
     private String id;
