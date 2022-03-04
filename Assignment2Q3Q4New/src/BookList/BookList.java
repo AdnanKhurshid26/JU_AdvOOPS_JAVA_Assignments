@@ -89,7 +89,7 @@ public class BookList {
     }
 
     // Update copies available of a book after transaction
-    public void copiesAfterTransaction(String _id, int x) {
-        books[isPresent(_id)].transact(x);
+    public void copiesAfterTransaction(String id, int x) {
+        books[isPresent(id)].transact(x);
     }
 }

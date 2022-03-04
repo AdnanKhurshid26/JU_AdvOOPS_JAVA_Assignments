@@ -22,13 +22,13 @@ public class Book {
         System.out.println("Enter the Title of the book:");
         title = scan.nextLine();
         System.out.println("Enter the copies purchased of the book:");
-        copiesPurchased = Integer.parseInt(scan.nextLine());
+        copiesPurchased = scan.nextInt();
         copiesAvailable = copiesPurchased;
     }
 
     // Showing the information of a Book
     public void showData() {
-        System.out.println("\n---Details of Book---\n");
+        System.out.println("\n--- Book Details ---\n");
         System.out.println("Book ID:  " + id);
         System.out.println("Title:  " + title);
         System.out.println("Copies of book purchased:  " + copiesPurchased);
@@ -39,7 +39,7 @@ public class Book {
 
         int temp;
         System.out.println("Enter the number of copies to be added:");
-        temp = Integer.parseInt(scan.nextLine());
+        temp = scan.nextInt();
         copiesPurchased += temp;
         copiesAvailable += temp;
 
