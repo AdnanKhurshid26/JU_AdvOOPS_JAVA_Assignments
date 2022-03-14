@@ -1,13 +1,13 @@
-package q2;
+package q1ArrayList;
 
 
 
 import java.util.Scanner;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class DepartmentList {
     Scanner sc = new Scanner(System.in);
-    public LinkedList<Department> departments = new LinkedList<Department>();
+    public ArrayList<Department> departments = new ArrayList<Department>();
 
     public DepartmentList() {
 
@@ -62,10 +62,9 @@ public class DepartmentList {
 
     }
 
-    public LinkedList<Department> getDepartmentList(){
+    public ArrayList<Department> getDepartmentList(){
         return departments;
     }
 
 }
-
 

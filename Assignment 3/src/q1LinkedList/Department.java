@@ -1,14 +1,13 @@
-package q1;
+package q1LinkedList;
 
 
-
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Department {
     private String deptCode;
     private String deptName;
     private String location;
-    private ArrayList<Employee> employees = new ArrayList<Employee>();
+    private LinkedList<Employee> employees = new LinkedList<Employee>();
 
     public Department(String deptCode, String deptName, String location) {
         this.deptCode = deptCode;
@@ -48,7 +47,7 @@ public class Department {
         employees.remove(e);
     }
 
-    public ArrayList<Employee> getEmployees() {
+    public LinkedList<Employee> getEmployees() {
         return employees;
     }
 

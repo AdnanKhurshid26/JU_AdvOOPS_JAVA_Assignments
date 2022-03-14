@@ -1,4 +1,4 @@
-package q1;
+package q1ArrayList;
 
 import java.util.Scanner;
 import java.util.ArrayList;
